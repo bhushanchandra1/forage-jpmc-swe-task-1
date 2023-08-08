@@ -1,0 +1,117 @@
+From a54d0a33219452856e795d7bb0fbb534fec1f02c Mon Sep 17 00:00:00 2001
+From: Chandra Bhushan <bhushanchandra125@gmail.com>
+Date: Tue, 8 Aug 2023 16:02:23 +0530
+Subject: [PATCH] o
+
+---
+ 0001-update.patch                   |  63 ++++++++++++++++++++++++++++
+ __pycache__/client3.cpython-311.pyc | Bin 0 -> 1855 bytes
+ 2 files changed, 63 insertions(+)
+ create mode 100644 0001-update.patch
+ create mode 100644 __pycache__/client3.cpython-311.pyc
+
+diff --git a/0001-update.patch b/0001-update.patch
+new file mode 100644
+index 0000000..d5c4513
+--- /dev/null
++++ b/0001-update.patch
+@@ -0,0 +1,63 @@
++From 3a1568d959c233c037deddb15d1da5edf4e94a9f Mon Sep 17 00:00:00 2001
++From: Chandra Bhushan <bhushanchandra125@gmail.com>
++Date: Tue, 8 Aug 2023 15:52:27 +0530
++Subject: [PATCH] update
++
++---
++ 0001-Re-add-sample-unit-test.patch | 44 ++++++++++++++++++++++++++++++
++ 1 file changed, 44 insertions(+)
++ create mode 100644 0001-Re-add-sample-unit-test.patch
++
++diff --git a/0001-Re-add-sample-unit-test.patch b/0001-Re-add-sample-unit-test.patch
++new file mode 100644
++index 0000000..8faf839
++--- /dev/null
+++++ b/0001-Re-add-sample-unit-test.patch
++@@ -0,0 +1,44 @@
+++From 879221fec2b863d37d5b493f02a530a8098ef6ef Mon Sep 17 00:00:00 2001
+++From: Joe Ferrer <joe@theforage.com>
+++Date: Wed, 1 Mar 2023 00:11:51 +1100
+++Subject: [PATCH] Re-add sample unit test
+++
+++---
+++ client_test.py | 25 +++++++++++++++++++++++++
+++ 1 file changed, 25 insertions(+)
+++ create mode 100644 client_test.py
+++
+++diff --git a/client_test.py b/client_test.py
+++new file mode 100644
+++index 0000000..af2bf26
+++--- /dev/null
++++++ b/client_test.py
+++@@ -0,0 +1,25 @@
++++import unittest
++++from client3 import getDataPoint
++++
++++class ClientTest(unittest.TestCase):
++++  def test_getDataPoint_calculatePrice(self):
++++    quotes = [
++++      {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++++      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++++    ]
++++    """ ------------ Add the assertion below ------------ """
++++
++++  def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
++++    quotes = [
++++      {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++++      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++++    ]
++++    """ ------------ Add the assertion below ------------ """
++++
++++
++++  """ ------------ Add more unit tests ------------ """
++++
++++
++++
++++if __name__ == '__main__':
++++    unittest.main()
+++-- 
+++2.40.1.windows.1
+++
++-- 
++2.40.1.windows.1
++
+diff --git a/__pycache__/client3.cpython-311.pyc b/__pycache__/client3.cpython-311.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..76afe4d351ee7802172e75dd2344f440b6a0fd1b
+GIT binary patch
+literal 1855
+zcmaJBOK2NMbVmEp%93o$vE16$VOww;yZ$DWxW=iI#tH<AvEwGhiyC#kGqGjMT4i_D
+z5LE^pdQeIZDg+{E3O<z7A%~h$XpSk(p+~I|L<|%RJ>@1yPdW9?DzfZAGoQEb&Ak76
+zvp<K!9S8=F?vs%KLjQ20HNvlvmw#b|?jwQ-P9v@P#Txc#pC%BWCK5rDi1;niWFi6d
+zQ-#QzJ}z(l=|eOCyMsy(LC<5@&2gNXM_=w~LEu9hp%w=fHd;QQozB+j(JvKux{lH<
+z9Q5Fgwk0@z+`2-??H;Fgx)0foAP?UnuSEigM!@?Ktp}{iwCA|Sgou!KLhIF{S|8lM
+zL;Uo_511&l7hr%!0d~+nfWaRF$0aek`;jLR0_dlGB;0@K6HuLP>LFzMv6pSmkeAUL
+zF@mOF2wsNzEu-PC7o2G!|K7UeWM?KO(x#!O*G=1*nVy`UoVb~z*6q0zIs46a>R-s9
+zahOGrf>@9M`{e@w_fY^9Kxf;JZR{N3hC5&TjtFi1c%0k5H>AWi=Ub$Ng0CRt!4D$k
+zg9vSl1<X$h;tdg^l=ElQMav{PgQ|Kutvc&e%}`1xQNPyHIclqpsjkrswR8tKRH8e2
+z)=Xs_l}WZ^8k@}TnAzlNiZCf_r3~7nb$jy#PxLTm(v7sKJHrx_ZstsfT0A!_00PM-
+ze*k!!s09T<wgf=s<JFuolel72%T5@p>p44db=fcpP0Uk!6Kp1Kn3ldq$2PKC#+ZGJ
+zjya%cY${=-Q#9k89?#xpp*8BvgTss5VT(Tum0QpN6w!e=TMtFbAKqOk#{ce)mTBcu
+zt?z@KTeZFkw|lbIJz2c;KgacOU!~s-zrS<d4Gk6J^<Z~-xU#Y<RfA(yaqJ~%N5)~7
+z0l{&v8)AUmM+Hpq>o@NsXc>B=fO%!08omXKGd}{1`MvZc^%k;f^D9-g_)}*JgmzhX
+zQl`}l<Opng06-Ddm9BE+yN*&vUFj^z^<Yo=%$>QaIAHPj&y-|xOHXBz$-IAwSA(ee
+zfT}y{NvOw6ULI8;hckI)RP~I{yu!nI#WSN0*-SY9*##!d$1e`Q%ft=a%rM!~GsN6t
+zojEI=POXkx6rP3cFu6%HY3WM*@(RNXUh+LxxeFP6izbsyOhG#^33RMchLcQ!Mj<xy
+zx3u^{i<zZh21>o9J502wPMGZVk!|rGve!)(BoA5qZ|HT9*N9N>2tVLadl`GB%x*!O
+zr|G8_&lZ1w_E!KK0>-#8f^eu9<g<>#MQ_$owAxw?83jg*5_}}3h#RsWk2laE=oRo_
+z108}+B!)`)eWAZ9^dE#Hr7y}u<)I4x{^Y%rcdp;P-av|U9yehL*CT`F-g^U;iw_o_
+z$4>3XPVIgC`|Pi?Ps2~;XW>7(o^`pW7i*^%-Plqsw)8x9bw761ja{q7uDOwwT4bdp
+zA1D{<Q84cd5KzitDPEsCyBB*x-KqK7)Vv!SFU8BBR8qT9==V~*6n~QA^J$9D>XP<)
+zCG=`@^{l!fqZTr%-a1giC8@MgnXXLl#CL~&`h0KbiS*m3J2+PxoO3(pT;*I%Ial>o
+QBZ|ZUh`J%RL-Z=}A6GiW&j0`b
+
+literal 0
+HcmV?d00001
+
+-- 
+2.40.1.windows.1
+
